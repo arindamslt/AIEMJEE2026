@@ -482,6 +482,96 @@ mysql> SELECT E.ENAME,E.JOB,E.SAL,D.DEPTNO,D.DNAME,D.LOC FROM EMP E,DEPT D WHERE
 
 ===============================================================================================
 
+DATE:01.04.2026
+=========================================================================================
+ECLIPSE
+TOMCAT
+C:\TOMCAT
+UI
+=======================
+USER INTERFACE
+HTML
+==========================================================
+HYTER TEXT LANGUAGE
+PUPROPSE
+==================================
+TO MAINTAIN THE STRUCTURE OF CONTENTS IN WEBPAGE
+WEBPAGE
+====================================
+IT IS AN ELECTRONIC PAGE HERE DISPLAY SOME CONTENTS
+HTML IS COLLECTION ELEMENTS
+==========================================================
+LIST ELEMENT
+PARAGRAPH ELEMENT
+IMAGE ELEMENT
+TABLE ELEMENT
+EVERY ELEMENT IS REPRESENTED BY TAG.
+TYPES OF TAG
+=======================
+OPENING TAG
+CLOSING TAG
+SELF CLOSING TAG
+TYPES OF LIST
+======================
+ORDERED LIST
+UNORDERED LIST
+DEFINATION LIST
+HEADING & PARAGRAPH
+=============================
+IMAGE ELEMENT
+GOOGLE MAP INTEGRATION
+=========================================================
+YOUTUBE INTEGRATION
+====================================================================
+LINKING BETWEEN HTML PAGES
+=====================================================================
+TWO WAYS
+==========================
+INTERNAVIGATION====ANCHOR TAG
+INTRANAVIGATION====ANCHOR TAG
+=========================================================================
+CSS
+===============================================================
+CASCADDING STYLE SHEET
+CSS  IS A STYLING LANGUAGE
+PURPOSE
+===============================================
+DESIGN THE STYLE OF CONTENT OF HTML PAGE
+CSS  TO BE WRITTEN IN FORM OF
+============================================
+KEY & VALUE PAIR
+color:"red";
+KEY    VALUE
+TYPES OF CSS
+========================================
+THREE TYPES
+============================================
+1.INLINE CSS
+2.INTERNAL CSS
+3.EXTERNAL CSS
+===================================================
+SELECTOR
+===================================================
+1.TAG NAME
+2.ID VALUE
+3.CLASS VALUE
+MARGIN & PADDING
+============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
