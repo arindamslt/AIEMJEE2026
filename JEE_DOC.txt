@@ -558,11 +558,91 @@ SELECTOR
 MARGIN & PADDING
 ============================================================
 
+BOOTSTRAP IS Powerful, extensible, and feature-packed frontend toolkit.
 
 
+DATE:02.04.2026
+================================================================
+1.TEXT-DECORATION
+2.CLASS VALUE
+3.LAYOUT
+============================================================
+LAYOUT
+===============================
+1.FLOW LAYOUT
+2.GRID LAYOUT
+===============================================
+BOOTSTRAP
+========================================================
+BOOTSTRAP IS A POWERFULL,EXTENSIBLE,SELF-PACKED TOOLKIT.
+================================================
+HANDELLING TEXT
+BACKGROUND COLOR
+TABLE ELEMENT
+FORM DESIGN
+JAVASCRIPT
+================================================================
+JAVASCRIPT IS PROGRAMMING LANGUAGE.BEFORE 2010 JAVASCRIPT IS SCRIPTING LANGUAGE.
+NOW JAVASCRIPT CAN COMMUNICATE WITH DATABASE,APPLICATION SERVER
+PURPOSE
+==========================================
+1.CREATING DYNAMIC USER INTERFACE
+2.CLIENT SIDE AND SERVER SIDE VALIDATION
+3.COMMUNICATE FRONT END AND BACK END APPLICATION
+JAVASCRIPT AREA
+=================================================
+1.STAND ALONE APPLICATION OR DESKTOP APPLICATION
+2.WEB APPLICATION
+3.MOBILE APPLICATION
+4.MACHINE LEARNING APP
+====================================================
+DATA TYPES
+===================================================
+PRIMITIVE TYPES:number,string,bigint,symbol,boolean,null,undefined
+NON PRIMITIVE TYPES===object
+======================================================================
+RUN A JAVASCRIPT
+======================================================
+RUNTIME ENVIRONMENT OF JAVASCRIPT
+======================================
+NODE JS
+==================================================
+HTML PAGE
+==============================================
+<head>
+<script>
 
+==============================JAVSCRIPT CODE
+</script>
+</head>
 
+VARIABLE CAN BE DECLARED IN JAVASCRIPT 
+=======================================
+THREE WAYS
+========================
+var
+let
+const
+=================================================================
+FUNCTION
+==================================================================
+TYPES OF FUNCTION
+=================================
+1.CONCRETE FUNCTION
+2.PARAMETERISED FUNCTION
+3.PARAMETERISED FUNCTION WITH RETURN STATEMENT
+4.ANNONYMOUS FUNCTION
+5.CALLBACK FUNCTION
+6.HIGHER ORDER FUNCTION
 
+DOM
+================================================
+DOCUMENT OBJECT MODEL
+================================================================
+HTML DOCUMENT COVERTED INTO OBJECTS CALLED NODES.WHEN NODES ARE IN TREE LIKE
+DATA STRAUCTURE CALLED DOM
+HTML DOCUMENT===BROWSER ENGINE===COMPILE====BYTES===CONVERED===TOKENS===OBJECTS CALLED NODES
+=================================================================================================
 
 
 
