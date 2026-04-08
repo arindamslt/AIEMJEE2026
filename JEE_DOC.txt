@@ -644,6 +644,341 @@ DATA STRAUCTURE CALLED DOM
 HTML DOCUMENT===BROWSER ENGINE===COMPILE====BYTES===CONVERED===TOKENS===OBJECTS CALLED NODES
 =================================================================================================
 
+DATE:06.04.2026
+==============================================================================================
+FEATURES OF JAVA
+================================================
+1.PLATFORM INDEPENDENT
+2.DISTRIBUTED
+3.MULTITHREADED
+X.java====JAVA COMPILER====CONVERT INTO==JAVA BYTE CODE===X.class
+javac X.java
+X.class===JVM(JAVA VIRTUAL MACHINE)===o/p
+4.OBJECT ORIENTED PROGRAMMING
+OBJECT==== REAL WORLD ENTITY
+
+CLASS==== COLLECTION OF SIMILLAR TYPES OF OBJECTS WITH COMMON PROPERTIES AND BEHAVIOUR 
+
+ CHAIR TABLE BOOKSHELF   FURNITURE
+========================  =======
+OBJECT                    CLASS
+COMMON PROPERTIES
+=====================================
+LENGTH
+WIDTH 
+HEIGHT
+COMMON BEHAVIOUR
+========================================
+KEEPING SOMETHING
+FEATURES OF OBJECT ORIENTED PROGRAMMING
+=================================================
+1.ENCAPSULATION
+2.POLYMORPHISM
+   STATIC
+   DYNAMIC
+3.INHERITANCE
+    SINGLE
+    MULTILEVEL
+    HIERARCHICAL
+4.ABSTRACTION
+5.DYNAMIC BINDING
+ ENCAPSULATION
+============================================================
+
+BINDING OF DATA AND METHOD TOGETHER
+CROCIN650
+PARACETAMOL
+UML
+=======================================================
+UNIFIED MODELLING LANGUAGE
+==========================================================
+TO DRAW THE CLASS DIAGRAM
+=========================================
+POLYMORPHISM
+==========================
+POLY==MANY
+MORPHISM==FORMS
+TWO TYPES
+====================
+STATIC POLYMORPHISM
+==========================
+CALLED METHOD OVERLOADDING
+METHOD OVERLOADDING
+================================================================
+SAME METHOD NAME WITH DIFFRERENT ARGUMENT PASSING BUT BODY IS SAME
+ADD1(INT,INT)
+ADD2(INT,FLOAT)
+ADD3()
+ADD(5,6)
+ADD(6,7.5)
+CONSTRUCTOR IS THE SAME NAME OF THE CLASS NAME.IT IS NOT EVENT VOID NOR RETURN TYPE
+BECUASE IT RETURN CLASS ITSELF.
+PURPOSE
+==========================
+1.CREATING THE OBJECT OF A CLASS
+2.AT THE TIME OF CREATING THE OBJECT INITIALIZE THE OBJECT
+CONSTRUCTOR OVERLOADDING
+===============================================
+INHERITANCE
+================================================
+AQURING THE PROPERTY OF ONE CLASS INTO ANOTHER CLASS
+TYPES OF INHERITANCE
+=====================================
+1.SINGLE
+2.MULTILEVEL
+3.HIERARARCHICAL
+===============================================================
+DYNAMIC POLYMORPHISM CALLED METHOD OVERRIDDING
+METHOD OVERRIDDING
+===============================================
+SAME METHOD NAME BOTH IN PARENT CLASS AND THE CHILD CLASS BUT BODY IS DIFFERENT
+ABSTRACTION
+=====================================================================
+1.ABSTRACT CLASS
+=================================================================
+A CLASS CONSIDERED TO ABSTRACT IF THERE IS ATLEAST ONE METHOD ABSTRACT
+abstract class Test
+{
+   public abstract void show();
+void show1(){}
+}
+2.ABSTRACT METHOD
+============================================
+A METHOD CONSIDERED TO ABSTRACT IF THE METHOD HAS NO BODY
+public abstract void show();
+RESTRICTION
+===========================================
+WE CAN'T CREATE OBJECT OF ABSTRACT CLASS
+
+INTERFACE
+==================================================================
+INTERFACE IS CONTRACT BETWEEN THE CLIENT CODE AND THE IMPLEMENTED CLASS
+
+RESTRICTION
+=========================
+WE CAN'T CREATE THE OBJECT OF ABSTRACT CLASS
+
+==============================================================
+EXCEPTION
+================================================================
+EXCEPTION IS AN EVENT WHICH OCCUR DURING THE EXECUTION OF PROGRAM.
+IF WE HANDLE THE EXCEPTION IT WILL PREVENT FROM ABNORMAL TERMINATION
+EXECPTION IS A CLASS
+TYPES OF EXCEPTION
+============================
+UNCHECKED
+CHECKED
+EXCEPTION HANDLE BY FIVE KEYWORDS
+=======================================
+try
+catch
+finally
+throw
+throws
+=================================================
+HIERARCHY OF EXCEPTION
+RUNTIME EXCEPTION AND IT'S SUBCLASS CALLED UNCHECKED EXCEPTION
+OTHERS ARE CALLED CHECKED EXCEPTION
+IN CASE OF UNCHECKED EXCEPTION JVM CAN HANDLE THE EXCEPTION
+IN CASE OF CHECKED EXCEPTION YOU HAVE TO HANDLE THE EXCEPTION
+EXCEPTION MESSAGE HANDLE BY THREE WAYS
+=========================================================================
+1.ExceptionObject.printstacktrace()
+   EXCEPTION CLASS NAME ALONG WITH PACKAGE NAME
+   MESSAGE
+  LINE NUMBER WHERE EXCEPTION OCCUR
+2.System.out.println(Object Name);
+ EXCEPTION CLASS NAME ALONG WITH PACKAGE NAME
+   MESSAGE
+3.System.out.println(Object Name.getMessage());
+   ONLY EXCEPTION MESSAGE SHOWN
+=======================================================================
+finally
+==================================================================
+WHETHER EXCEPTION OCCUR OR NOT FINALLY BLOCK ALWAYS EXECUTED
+PURPOSE
+=============================================
+CLEANING UP TASK
+================================================
+THROWS 
+=============================================
+IF YOU NEED TO HANDLE EXCEPTION WITHOUT TRY AND CATCH BLOCK
+THEN WE WILL GO FOR THROWS KEYWORD
+BUT IN CASE OF THROWS BOTH CALLER AS WELL AS CALLE ENVIRONMENT YOU HAVE TO
+USE THROWS KEYWORD
+===========================================================
+
+CHECKED EXCEPTION
+===========================================================
+OTHER THAN THE SUBCLASS OF RUNTIME EXCEPTION
+============================================================
+DATE:07.04.2026
+================================================================
+
+COMMUNICATE JAVA WITH DATABASE
+===================================================================
+JDBC===JAVA DATABASE CONNECTIVITY
+IN CASE OF JDBC APPLICATION WE HAVE TO IMPORT
+import java.sql.*;===COLLECTION OF CLASSES AND INTERFACES
+LIST OF IMPORTANT INTERFACES
+======================================================================
+1.Connection=======TO ESTABLISH THE CONNECTION
+2.Statement=========EXECUTE SQL STATEMENT
+3.PreparedStatement==EXECUTE PRECOMPILED SQL STATEMENT
+4.CallbleStatement====EXECUTE STORED PROGRAMMING
+5.ResultSet===========TO STORE THE DATA FROM THE DATABASE
+6.ResultSetMetaData===GIVE DETAILS INFORMATION OF RESULTSET
+7.DatabaseMetaData=====GIVE DETAILS INFORMATION OF DATABASE
+======================================================================
+LIST OF IMPORTANT CLASSES
+===================================================================
+1.DriverManager====REGISTER AND LOAD THE JDBC DRIVER
+2.Date===============DEALS WITH DATE TYPE
+3.TimeStamp=========DEALS WITH BOTH DATE AND TIME
+============================================================
+EXECEPTION HANDLE HERE
+============================================================
+1.ClassnotFoundException
+2.SQLException
+
+TYPES OF JDBC DRIVER
+===============================
+1.TYPE-I
+2.TYPE-II
+3.TYPE-III
+4.TYPE-IV
+=================================================
+STEPS OF COMMUNICATION
+============================================
+1.import java.sql.*;
+2.REGISTER AND LOAD THE JDBC DRIVER
+3.ESTABLISH THE CONNECTION
+4.CREATE THE STATEMENT
+5.EXECUTE THE STATEMENT
+6.RETRIEVE THE DATA INTO RESULTSET
+7.CLOSE CONNECTION AND STATEMENT
+===================================================
+mysql> USE ADVJAVADB;
+Database changed
+mysql> SHOW TABLES;
++---------------------+
+| Tables_in_advjavadb |
++---------------------+
+| customer            |
+| dept                |
+| dept1               |
+| dept2               |
+| emp                 |
++---------------------+
+5 rows in set (0.03 sec)
+
+mysql> CREATE TABLE CUSTOMER_DTLS
+    -> (CID VARCHAR(10) PRIMARY KEY,
+    ->  CNAME VARCHAR(25) NOT NULL,
+    ->  CPHNO  VARCHAR(25) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> DESC CUSTOMER_DTLS;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| CID   | varchar(10) | NO   | PRI | NULL    |       |
+| CNAME | varchar(25) | NO   |     | NULL    |       |
+| CPHNO | varchar(25) | NO   |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
+INSERT INTO CUSTOMER_DTLS VALUES('C1','ARUP','65664646');
+INSERT INTO CUSTOMER_DTLS VALUES('C2','ROBIN','634535456');
+SELECT * FROM CUSTOMER_DTLS;
++-----+-------+-----------+
+| CID | CNAME | CPHNO     |
++-----+-------+-----------+
+| C1  | ARUP  | 65664646  |
+| C2  | ROBIN | 634535456 |
++-----+-------+-----------+
+============================================================================================
+public int add()
+{
+
+}
+public Connection getConn()
+{
+
+}
+
+CONCEPTS
+===============================================================
+1.TWO TIER ARCHITECTURE
+2.THREE TIER ARCHITECTURE
+3.n-TIER ARCHITECTURE
+JEE
+=======================================
+JAVA ENTERPRISE EDITION
+JEE SUPPORT n-TIER ARCHIETECTURE
+SERVLET
+==========================================================================================
+SERVER SIDE PROGRAM
+REQUEST REPONSE ORIENETED PROGRAM
+IT IS ACT AS AN CONTROLLER
+SERVLET IS NOTHING BUT A CLASS
+import javax.servlet.*;
+import javax.servlet.http.*;
+LIFE CYLE OF SERVLET
+=============================================================
+init()===service()===destroy()
+HIERARCHY OF SERVLET
+==========================================================
+GenericServelt
+HttpServlet
+GET                    VS        POST
+================================================================
+1.DATA EMBDEDDED              1.DATA IS NOT EMBEDDED IN URL
+  IN URL
+2.IT IS INSECURED             2.IT IS SECURED
+3.AMOUNT DATA SENDING         3.ANY AMOUNT OF DATA CAN BE SENT
+  RESTRICTED
+4.IT IS FASTER                4.IT IS SLOWER THAT GET REQUEST
+=====================================================================
+DATE:08.04.2026
+==========================================================================
+COMMUNICATE SERVLET TO SERVLET
+==========================================================================
+SERVLET TO SERVLET COMMNUCATION IS DONE BY RequestDispatcher Class
+====================================================================
+JSP
+==============================================================
+JAVA SERVER PAGES
+HTML=== ONLY HTML CODE
+JSP==BOTH HTML AND JAVA CODE
+<body>
+HELLO
+<%  
+  int x=25;
+  %>
+</body>
+<%   %>===CALLED SCRIPLET
+<% =X %>====EXPRESSION
+LIFE CYLE OF JSP
+==================================================
+jspinit()===jspservice()===jspdestroy()
+Test.jsp===compile===Test_jsp.java===compile==Test_jsp.class
+JSP IS ANOTHER FORM SERVLET
+PATH WHERE JSP CONVERTED TO SERVLET
+===========================================================================
+C:\JEEMARCH2026\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\work\Catalina\localhost\JSPDEMO\org\apache\jsp
+JSP TO JSP COMMUNICATION
+======================================================================
+JSP ACTION TAG
+================================================================
+<jsp:include>
+<jsp:forward>
+============================================================
+<jsp:param>
+<jsp:useBean>
+<jsp:setProperty>
+<jsp:getPropery>
+
 
 
 
