@@ -1,3 +1,5 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="model.FoodDao"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
   <jsp:include page="Nav.jsp"/>
@@ -10,7 +12,31 @@
 </head>
 <body>
 <div style="width:30%;margin:50px auto;">
-	<h2 class="text-dark">FOOD ADDED SUCCESSFULLY</h2>
+	<h2 class="text-dark">AVAILABLE FOOD LIST</h2>
+	<table class="table table=hover">
+	<thead class="table table-dark">
+	<tr>
+	<th>FOOD ID</th>
+	<th>FOOD NAME</th>
+	<th>PRICE</th>
+	</thead>
+	<%
+	    FoodDao fdao=new FoodDao();
+	    ResultSet rs=fdao.getData();
+	    while(rs.next())
+	    {
+	
+	%>
+	<tbody>
+	<tr>
+	<td><%=rs.getString(1)%></td>
+	<td><%=rs.getString(2)%></td>
+	<td><%=rs.getDouble(3)%></td>
+	</tbody>
+	<%
+	    }
+	%>
+	</table>
 	
 </div>
 </body>

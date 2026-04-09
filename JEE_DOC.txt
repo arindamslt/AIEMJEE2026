@@ -989,12 +989,57 @@ SESSION MANAGEMENT CAN BE DONE BY
 ===========================================================================
 DATE:09.04.2026
 ===========================================================================
+DESIGN PATTERN
+=========================================================================
+WELL APPROVED SOLUTION
+ DESIGN PATTERN
+==============================================================
+MVC DESIGN PATTERN
+M==MODEL===CLASS WHICH CONNECT TO DATABASE===DAO===DATA ACCESS OBJECT
+V==VIEW=====HTML,JSP,
+C==CONTROLLER===SERVLET
+PROJECT
+===================
+ATLEAST TWO USER
+===================================
+1.ADMIN
+2.CLIENT
 
+DATABASE:FDAPP
+TABLE:FOOD
+FID VARCHAR 10 PRIMARY KEY
+FNAME VARCHAR 25 NOT NULL
+PRICE  DECIMAL
+=======================================================================
+mysql> CREATE DATABASE FDDB;
+ERROR 1007 (HY000): Can't create database 'fddb'; database exists
+mysql> CREATE DATABASE FDAPP;
+Query OK, 1 row affected (0.02 sec)
 
+mysql> USE FDAPP;
+Database changed
+mysql> SHOW TABLES;
+Empty set (0.03 sec)
 
+mysql> CREATE TABLE FOOD
+    -> (FID VARCHAR(10) PRIMARY KEY,
+    ->  FNAME VARCHAR(25) NOT NULL,
+    ->  PRICE DECIMAL);
+Query OK, 0 rows affected (0.06 sec)
 
+mysql> DESC FOOD;
++-------+---------------+------+-----+---------+-------+
+| Field | Type          | Null | Key | Default | Extra |
++-------+---------------+------+-----+---------+-------+
+| FID   | varchar(10)   | NO   | PRI | NULL    |       |
+| FNAME | varchar(25)   | NO   |     | NULL    |       |
+| PRICE | decimal(10,0) | YES  |     | NULL    |       |
++-------+---------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
 
+PROJECT CREATION===DYNAMIC WEB PROJECT===FOODAPP
 
+https://www.youtube.com/watch?v=ODA3rWfmzg8
 
 
 
