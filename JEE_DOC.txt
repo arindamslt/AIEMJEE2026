@@ -978,6 +978,17 @@ JSP ACTION TAG
 <jsp:useBean>
 <jsp:setProperty>
 <jsp:getPropery>
+===============================================================
+SESSION MANAGEMENT
+===============================================================
+SESSION MANAGEMENT CAN BE DONE BY
+1.URL REWRITTING
+2.SESSION
+3.INPUT FROM HIDDEN FIELDS
+4.COOKIES
+===========================================================================
+DATE:09.04.2026
+===========================================================================
 
 
 
