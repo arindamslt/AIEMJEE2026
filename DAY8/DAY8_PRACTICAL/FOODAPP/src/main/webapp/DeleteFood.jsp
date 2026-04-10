@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+  <jsp:include page="Nav.jsp"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DELETE FOOD</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+<div style="width:30%;margin:50px auto;">
+	<h2 class="text-danger">DELETE FOOD</h2>
+	<form action="DelFoodServe" method="post">
+	<input type="text" name="fid" class="form-control" placeholder="ENTER THE FOOD ID"/>
+		<input type="submit" class="btn btn-outline-danger" value="DELETE"/>
+   </form>
+</div>
+</body>
+</html>

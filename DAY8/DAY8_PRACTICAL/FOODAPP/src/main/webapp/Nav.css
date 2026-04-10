@@ -1,0 +1,20 @@
+#main{
+	display: flex;
+}
+#lefts{
+	background-color: black;
+	color: white;
+	width: 15%;
+	text-align: center;
+}
+#rights{
+	background-color: black;
+	color: white;
+	width: 85%;
+	display: flex;
+	a{
+		color:white;
+		text-decoration: none;
+		margin:20px auto;
+	}
+}
