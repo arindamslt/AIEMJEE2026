@@ -17,6 +17,7 @@
 		<a href="SearchFoodClient.jsp"  target="_blank">SEARCH FOOD</a>
 		<a href="Order.jsp" target="_blank">ORDER FOOD</a>
 		<a href="Billing.jsp" target="_blank">BILLING</a>
+		<a href="Home.jsp" target="_blank">LOGOUT</a>
 	
 		
 	</div>

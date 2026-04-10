@@ -18,7 +18,7 @@
 		<a href="UpdateFood.jsp" target="_blank">UPDATE FOOD</a>
 		<a href="SearchFood.jsp" target="_blank">SEARCH FOOD</a>
 		<a href="FoodDetails.jsp" target="_blank">FOOD DETAILS</a>
-		
+		<a href="Home.jsp" target="_blank">LOGOUT</a>
 	</div>
 </div>
 </body>
