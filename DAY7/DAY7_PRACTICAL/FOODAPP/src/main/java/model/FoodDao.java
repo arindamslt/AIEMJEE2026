@@ -10,7 +10,7 @@ public class FoodDao {
 	private String select_sql="select * from food";
     private String insert_sql="insert into food values(?,?,?)";
    private String delete_sql="delete from food where fid=?";
-   // public String update_sql="update customer_dtls set cname=?,cphno=? where cid=?";
+   public String update_sql="update food set fname=?,price=? where fid=?";
     public void insertData(String fid,String fname,double price)
    	{
    		try
@@ -22,6 +22,28 @@ public class FoodDao {
    		ps.setString(1,fid);
    		ps.setString(2,fname);
    		ps.setDouble(3,price);
+   		ps.executeUpdate();//SAVING DATA INTO DATABASE
+   		}
+   		/*catch(ClassNotFoundException ce)
+   		{
+   			ce.printStackTrace();
+   		}*/
+   		catch(SQLException se)
+   		{
+   			se.printStackTrace();
+   		}
+   	}
+    public void updateData(String fid,String fname,double price)
+   	{
+   		try
+   		{
+   	
+   			ConnectionFactory con=new ConnectionFactory();
+   			cn=con.getConn();
+   			ps=cn.prepareStatement(update_sql);
+   		ps.setString(3,fid);
+   		ps.setString(1,fname);
+   		ps.setDouble(2,price);
    		ps.executeUpdate();//SAVING DATA INTO DATABASE
    		}
    		/*catch(ClassNotFoundException ce)

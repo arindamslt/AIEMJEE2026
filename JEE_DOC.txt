@@ -1041,7 +1041,14 @@ PROJECT CREATION===DYNAMIC WEB PROJECT===FOODAPP
 
 https://www.youtube.com/watch?v=ODA3rWfmzg8
 
-
+CREATE TABLE ORDERDTLS
+(OID INT PRIMARY KEY AUTO_INCREMENT,
+ ODT DATE DEFAULT (CURRENT_DATE()),
+ FID VARCHAR(10) NOT NULL,
+ QTY INT,
+ UNAME VARCHAR(15)
+);
+==================================================================================
 
 
 
